@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer components {
+    .custom-login-btn {
+        @apply inline-block font-bold py-2 px-4 rounded text-white;
+        background: linear-gradient(to right, #02aabd 0%, #00cdac 100%);
+        transition: all 0.5s;
+      }
+    
+      .custom-login-btn:hover {
+        background: linear-gradient(to left, #0072ff 0%, #00c6ff 100%);
+      }
+    
+      .custom-login-btn:hover i {
+        transition: transform 0.5s all;
+      }
+
+      .round-btn {
+        @apply w-10 h-10 rounded-full overflow-auto bg-gradient-to-b from-gray-200 to-slate-200 text-center;
+        @apply shadow-md transition-transform transform hover:scale-105 focus:outline-none focus:ring-1 focus:ring-slate-100 focus:ring-offset-4 focus:ring-offset-slate-800;
+    }
+  
+  
+    .btn {
+        @apply bg-gradient-to-r from-teal-700 to-cyan-600 active:bg-teal-900 hover:bg-cyan-700;
+        @apply p-3 rounded-lg text-white block w-full transition-all ease-in-out duration-200;
+        @apply shadow-lg transition-all ease-in-out duration-200; /* Default styles */
+        @apply hover:bg-gradient-to-r hover:from-teal-600 hover:to-cyan-500; /* Hover styles */
+      }
+  
+    .errors {
+        @apply text-sm text-red-500 p-1 mt-2;
+    }
+  
+    .success {
+        @apply text-sm text-green-500 p-1 mt-2;
+    }
+
+    .title {
+      @apply text-2xl text-sky-500 font-bold;
+    }
+  
+    .input {
+        @apply block w-full p-3 rounded-lg backdrop-blur-md shadow-inner mt-1 bg-gray-700 text-white placeholder-gray-400 ;
+        @apply ring-1 ring-slate-600 focus:ring-teal-500 focus:ring-2 outline-0 border-0 transition-all ease-in-out duration-150;
+    }
+
+    .post__input {
+      @apply w-full border border-gray-700 px-4 py-3 bg-slate-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:border-transparent;
+    }
+   
+  }
